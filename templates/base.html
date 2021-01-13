@@ -13,7 +13,13 @@
     {% block nav %}
     <div class="text-center">
         <a class="mr-3" href="{% url 'home' %}" style="color:black">Accueil</a>
-      </div>
+    </div>
+    <div class="text-center">
+        <a class="mr-3" href="{% url 'projet_portfolio:portfolio' %}" style="color:black">Portfolio</a>
+    </div>
+    <div class="text-center">
+        <a class="mr-3" href="{% url 'log_in' %}#log-in" style="color:black">Me contacter</a>
+    </div>
     {% endblock nav %}
 
     {% block content %}
@@ -23,13 +29,11 @@
   <footer class="footer py-4">
     <div class="container">
       <div class="align-items-center">
-        <div class="text-center">
-            <a class="mr-3" href="{% url 'log_in' %}#log-in" style="color:black">Me contacter</a>
-        </div>
+        
         <div class="text-center">
             <a class="mr-3" href="{% url 'legal_notice' %}#legalnotice" style="color:black">Mentions légales</a>
         </div>
-        <div class="text-center">Copyright © 2021 RB.Dev.web</div>
+        <div class="text-center">Copyright © 2021 RB.Dev.Web</div>
       </div>
     </div>
   </footer>

@@ -24,6 +24,7 @@ from . import views
 urlpatterns = [
     path('', views.home, name="home"),
     path('admin/', admin.site.urls),
+    path('projet-portfolio/', include("projet_portfolio.urls", namespace="projet_portfolio")),
     path('legal-notice/', views.legal_notice, name="legal_notice"),
     path('log-in/', views.log_in, name="log_in"),
 ]
