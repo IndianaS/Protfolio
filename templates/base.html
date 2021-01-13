@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    {% block nav %}
+    <div class="text-center">
+        <a class="mr-3" href="{% url 'home' %}" style="color:black">Accueil</a>
+      </div>
+    {% endblock nav %}
+
+    {% block content %}
+    {% endblock content %}
+<!-- Footer-->
+    {% block footer %}
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="align-items-center">
+        <div class="text-center">
+            <a class="mr-3" href="{% url 'log_in' %}#log-in" style="color:black">Me contacter</a>
+        </div>
+        <div class="text-center">
+            <a class="mr-3" href="{% url 'legal_notice' %}#legalnotice" style="color:black">Mentions légales</a>
+        </div>
+        <div class="text-center">Copyright © 2021 RB.Dev.web</div>
+      </div>
+    </div>
+  </footer>
+    {% endblock footer %}
+</body>
+
+</html>
