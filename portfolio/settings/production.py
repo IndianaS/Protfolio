@@ -1,7 +1,7 @@
 from. import *
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.rb-dev-web.fr', 'rb-dev-web.fr']
 DEBUG = False
 
 DATABASES = {
